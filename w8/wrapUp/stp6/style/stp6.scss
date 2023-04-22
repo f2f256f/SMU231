@@ -163,7 +163,7 @@
     word-spacing: 5px;
     line-height: 2;
   }
-  @media (width < 850px) {
+  @media (min width: 320px) and (max-width: 480) {
     .wrapper {
       display: block;
       text-align: center;
