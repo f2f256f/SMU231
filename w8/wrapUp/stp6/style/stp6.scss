@@ -126,6 +126,8 @@
 }
 
 #hero3 {
+  container-type: inline-size;
+  container-name: hero3;
   .wrapper {
     display: flex;
     & > * {
@@ -163,14 +165,23 @@
     word-spacing: 5px;
     line-height: 2;
   }
-  @media (min width: 320px) and (max-width: 480) {
-    .wrapper {
+  @container hero3 (width < 53.125rem) {
+    &__media {
       display: block;
       text-align: center;
       p {
         margin-inline: auto;
       }
     }
+    // @media (width < 850px) {
+    //   .wrapper {
+    //     display: block;
+    //     text-align: center;
+    //     p {
+    //       margin-inline: auto;
+    //     }
+    //   }
+    // }
   }
 }
 
