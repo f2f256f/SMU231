@@ -158,13 +158,13 @@
   word-spacing: 5px;
   line-height: 2;
 }
-@media (width < 850px) {
+@media (width < 767px) {
   #hero3 .wrapper {
     display: block;
-    text-align: center;
-  }
-  #hero3 .wrapper p {
-    margin-inline: auto;
+    text-align: justify;
+    width: 90%;
+    padding: 20px p;
+    padding-margin-inline: auto;
   }
 }
 
