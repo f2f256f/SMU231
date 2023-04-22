@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "PyeongChangPeace-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1328px;
+  margin-inline: auto;
+  padding-inline: 64px;
+}
+
+.wrapper {
+  padding-block: 64px;
+}
+
+.wrapper .topNav_logo {
+  height: 32px;
+  align-items: center;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  font-size: larger;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 12px;
+}
+.nav__menuWrapper {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+.nav__menu > a {
+  color: white;
+  text-decoration: none;
+}
+
+#hero1 {
+  text-align: center;
+}
+#hero1 .main__text {
+  margin-inline: auto;
+  max-width: 800px;
+  margin-bottom: 24px;
+  font-size: 50px;
+  line-height: 1.7;
+  font-family: "Roboto", sans-serif;
+}
+#hero1 .main__media {
+  aspect-ratio: 16/9;
+  background-color: black;
+  overflow: hidden;
+}
+#hero1 .main__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero1 h2 {
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-size: 55px;
+}
+#hero1 span {
+  font-style: italic;
+}
+#hero1 p {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#hero2 {
+  text-align: center;
+  background-color: #e6e6e6;
+}
+#hero2 .main__text {
+  margin-inline: auto;
+  max-width: 1200px;
+  font-size: larger;
+  font-family: "Roboto", sans-serif;
+}
+#hero2 h2 {
+  margin-bottom: 16px;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 60px;
+}
+#hero2 h3 {
+  color: #666666;
+  font-size: 30px;
+  word-spacing: 16px;
+}
+
+#hero3 .wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+#hero3 .wrapper > * {
+  flex: 1;
+}
+#hero3 .main__media {
+  aspect-ratio: 4/5;
+  background-color: black;
+  overflow: hidden;
+}
+#hero3 .main__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero3 .main__text {
+  margin-inline: auto;
+  max-width: 100%;
+  font-size: larger;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#hero3 h1 {
+  margin-block: 16px;
+}
+#hero3 p {
+  max-width: 20h;
+  font-size: 25px;
+  gap: 24px;
+  word-spacing: 5px;
+  line-height: 2;
+}

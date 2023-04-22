@@ -13,7 +13,9 @@ body {
 .container {
   /* background-color: green; */
   --variableName: 24px;
-  max-width: calc(1200px + 2 * var(--variableName));
+  max-width: calc(
+    1200px + 2 * var(--variableName)
+  );
   margin-inline: auto;
   padding-inline: var(--variableName);
 }
