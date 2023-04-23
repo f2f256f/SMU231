@@ -144,7 +144,8 @@
   }
   h3 {
     color: #666666;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 35px;
     word-spacing: 16px;
     line-height: 1.7;
   }
@@ -152,11 +153,11 @@
     .wrapper {
       // text-align: center;
       h2 {
-        font-size: 60px;
+        font-size: 55px;
       }
       h3 {
         // margin-inline: auto;
-        font-size: 35px;
+        font-size: 20px;
         // text-align: center;
         // display: grid;
         // grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -170,6 +171,7 @@
   // container-name: hero3;
   .wrapper {
     display: flex;
+    padding-bottom: 10px;
     & > * {
       flex: 1;
     }
@@ -237,6 +239,7 @@
 
 #hero4 {
   .wrapper {
+    padding-bottom: 10px;
     display: flex;
     & > * {
       flex: 1;
@@ -291,6 +294,7 @@
 
 #hero5 {
   .wrapper {
+    padding-bottom: 10px;
     display: flex;
     & > * {
       flex: 1;
