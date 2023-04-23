@@ -66,7 +66,7 @@
 }
 #hero1 .wrapper {
   display: flex;
-  padding-top: 6rem;
+  padding-top: 5rem;
   gap: 24px;
   align-items: center;
 }
@@ -130,6 +130,7 @@
 }
 .track .button {
   color: white;
+  background-color: grey;
   padding: 8px 12px;
   border-radius: 12px;
 }
@@ -137,11 +138,181 @@
   color: white;
   text-decoration: none;
 }
-.track #button1 {
-  background-color: #00d000;
+@media (max-width: 850px) {
+  .track .button {
+    padding: 4px 6px;
+  }
 }
-.track #button2 {
-  background-color: #e6000e;
+
+#hero2 {
+  font-family: "Noto Sans KR", sans-serif;
+}
+#hero2 .wrapper {
+  display: flex;
+  padding-top: 6rem;
+  gap: 24px;
+  align-items: center;
+}
+#hero2 .wrapper > * {
+  flex: 1;
+}
+#hero2 .main__media {
+  aspect-ratio: 1/1;
+  background-color: black;
+  overflow: hidden;
+}
+#hero2 .main__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero2 h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+#hero2 p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+@media (max-width: 850px) {
+  #hero2 .wrapper {
+    display: block;
+    text-align: center;
+  }
+  #hero2 .wrapper h1 {
+    font-size: 40px;
+    margin-top: 12px;
+  }
+  #hero2 .wrapper p {
+    margin-inline: auto;
+    font-size: 13px;
+  }
+}
+
+#hero3 {
+  font-family: "Noto Sans KR", sans-serif;
+}
+#hero3 .wrapper {
+  display: flex;
+  padding-top: 6rem;
+  gap: 24px;
+  align-items: center;
+}
+#hero3 .wrapper > * {
+  flex: 1;
+}
+#hero3 .main__media {
+  aspect-ratio: 1/1;
+  background-color: black;
+  overflow: hidden;
+}
+#hero3 .main__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero3 h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+#hero3 p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+@media (max-width: 850px) {
+  #hero3 .wrapper {
+    display: block;
+    text-align: center;
+  }
+  #hero3 .wrapper h1 {
+    font-size: 40px;
+    margin-top: 12px;
+  }
+  #hero3 .wrapper p {
+    margin-inline: auto;
+    font-size: 13px;
+  }
+}
+
+#hero4 {
+  font-family: "Noto Sans KR", sans-serif;
+}
+#hero4 .wrapper {
+  display: flex;
+  padding-top: 6rem;
+  gap: 24px;
+  align-items: center;
+}
+#hero4 .wrapper > * {
+  flex: 1;
+}
+#hero4 .main__media {
+  aspect-ratio: 1/1;
+  background-color: black;
+  overflow: hidden;
+}
+#hero4 .main__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#hero4 h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+#hero4 p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+@media (max-width: 850px) {
+  #hero4 .wrapper {
+    display: block;
+    text-align: center;
+  }
+  #hero4 .wrapper h1 {
+    font-size: 40px;
+    margin-top: 12px;
+  }
+  #hero4 .wrapper p {
+    margin-inline: auto;
+    font-size: 13px;
+  }
+}
+
+.track {
+  font-weight: 700;
+  font-size: 28px;
+}
+@media (max-width: 850px) {
+  .track .wrapper {
+    font-size: 14px;
+  }
+}
+.track .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-block: 6px;
+}
+.track__menuWrapper {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+.track .button {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+.track .button a {
+  color: white;
+  text-decoration: none;
 }
 @media (max-width: 850px) {
   .track .button {
