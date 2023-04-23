@@ -88,7 +88,7 @@
   h2 {
     margin-bottom: 24px;
     // font-weight: 1200;
-    font-size: 80px;
+    font-size: 70px;
     font-family: "Roboto", sans-serif;
   }
   span {
@@ -103,6 +103,8 @@
 }
 
 #hero2 {
+  container-type: inline-size;
+  container-name: hero2;
   text-align: center;
   background-color: #e6e6e6;
   .main {
@@ -123,6 +125,11 @@
     color: #666666;
     font-size: 30px;
     word-spacing: 16px;
+  }
+  @container hero2 (max-width: 700px) {
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
@@ -162,7 +169,7 @@
   }
   p {
     max-width: 20h;
-    font-size: 25px;
+    font-size: 20px;
     gap: 24px;
     word-spacing: 5px;
     line-height: 2;
@@ -226,12 +233,12 @@
   }
   p {
     max-width: 20h;
-    font-size: 25px;
+    font-size: 20px;
     gap: 24px;
     word-spacing: 5px;
     line-height: 2;
   }
-  @media (width < 850px) {
+  @media (max-width: 850px) {
     .wrapper {
       display: block;
       text-align: center;
@@ -276,12 +283,12 @@
   }
   p {
     max-width: 20h;
-    font-size: 25px;
+    font-size: 20px;
     gap: 24px;
     word-spacing: 5px;
     line-height: 2;
   }
-  @media (width < 850px) {
+  @media (max-width: 850px) {
     .wrapper {
       display: block;
       text-align: center;
@@ -326,12 +333,12 @@
   }
   p {
     max-width: 20h;
-    font-size: 25px;
+    font-size: 20px;
     gap: 24px;
     word-spacing: 5px;
     line-height: 2;
   }
-  @media (width < 850px) {
+  @media (max-width: 850px) {
     .wrapper {
       display: block;
       text-align: center;
