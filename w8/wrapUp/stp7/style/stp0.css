@@ -121,7 +121,7 @@
 
 .track {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 28px;
 }
 @media (max-width: 850px) {
   .track .wrapper {
@@ -132,10 +132,34 @@
 .track .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding-block: 6px;
 }
-
-.track .track__menuWrapper {
+.track__menuWrapper {
   display: flex;
   gap: 24px;
+  align-items: baseline;
+}
+.track .button {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.track .button a {
+  color: white;
+  text-decoration: none;
+}
+.track #button1 {
+  background-color: #00d000;
+}
+.track #button2 {
+  background-color: #e6000e;
+}
+
+#button1 {
+  background-color: #00d000;
+}
+
+#button2 {
+  background-color: #e6000e;
 }

@@ -129,20 +129,57 @@
 
 .track {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 28px;
   @media (max-width: 850px) {
     .wrapper {
       font-size: 15px;
     }
   }
 }
-.track .wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-block: 6px;
+.track {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-block: 6px;
+  }
+  &__menuWrapper {
+    display: flex;
+    gap: 24px;
+    align-items: baseline;
+  }
+  .button {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  #button1 {
+    background-color: #00d000;
+  }
+
+  #button2 {
+    background-color: #e6000e;
+  }
+}
+// .button {
+//   color: white;
+//   padding: 8px 12px;
+//   border-radius: 8px;
+//   &__menu > a {
+//     color: white;
+//     text-decoration: none;
+//   }
+// }
+
+#button1 {
+  background-color: #00d000;
 }
 
-.track .track__menuWrapper {
-  display: flex;
-  gap: 24px;
+#button2 {
+  background-color: #e6000e;
 }
