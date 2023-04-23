@@ -459,3 +459,46 @@
     }
   }
 }
+
+#trackN1 {
+  margin-bottom: 120px;
+}
+.footer {
+  font-family: "Roboto", sans-serif;
+  background-color: #b3b3b3;
+  color: white;
+  font-size: 16px;
+  justify-content: center;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer li {
+  list-style: none;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.footer h2 {
+  margin-bottom: 16px;
+  margin-top: 2px;
+}
+.footer li {
+  margin-bottom: 6px;
+}
+@media (max-width: 850px) {
+  .footer li {
+    font-size: 12px;
+  }
+}
+
+#column1 {
+  margin-top: 46px;
+}
+
+#column2 {
+  margin-top: 46px;
+}
