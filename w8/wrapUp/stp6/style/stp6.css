@@ -177,7 +177,7 @@
 }
 #hero3 h1 {
   margin-block: 16px;
-  font-size: 47px;
+  font-size: 80px;
 }
 #hero3 p {
   max-width: 20h;
@@ -190,6 +190,9 @@
   #hero3 .wrapper {
     display: block;
     text-align: center;
+  }
+  #hero3 .wrapper h1 {
+    font-size: 50px;
   }
   #hero3 .wrapper p {
     margin-inline: auto;
@@ -227,7 +230,7 @@
 }
 #hero4 h1 {
   margin-block: 16px;
-  font-size: 47px;
+  font-size: 80px;
 }
 #hero4 p {
   max-width: 20h;
@@ -240,6 +243,9 @@
   #hero4 .wrapper {
     display: block;
     text-align: center;
+  }
+  #hero4 .wrapper h1 {
+    font-size: 50px;
   }
   #hero4 .wrapper p {
     margin-inline: auto;
@@ -277,7 +283,7 @@
 }
 #hero5 h1 {
   margin-block: 16px;
-  font-size: 47px;
+  font-size: 80px;
 }
 #hero5 p {
   max-width: 20h;
@@ -290,6 +296,9 @@
   #hero5 .wrapper {
     display: block;
     text-align: center;
+  }
+  #hero5 .wrapper h1 {
+    font-size: 50px;
   }
   #hero5 .wrapper p {
     margin-inline: auto;
@@ -327,7 +336,7 @@
 }
 #hero6 h1 {
   margin-block: 16px;
-  font-size: 44px;
+  font-size: 78px;
 }
 #hero6 p {
   max-width: 20h;
@@ -340,6 +349,9 @@
   #hero6 .wrapper {
     display: block;
     text-align: center;
+  }
+  #hero6 .wrapper h1 {
+    font-size: 50px;
   }
   #hero6 .wrapper p {
     margin-inline: auto;
