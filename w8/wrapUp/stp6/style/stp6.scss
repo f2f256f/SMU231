@@ -423,6 +423,11 @@
   li {
     margin-bottom: 6px;
   }
+  @media (max-width: 850px) {
+    li {
+      font-size: 12px;
+    }
+  }
 }
 #column1 {
   margin-top: 46px;
