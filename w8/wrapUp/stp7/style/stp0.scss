@@ -20,7 +20,7 @@
 }
 
 .wrapper {
-  padding-block: 64px;
+  padding-block: 48px;
 }
 .wrapper .topNav_logo {
   height: 32px;
@@ -33,8 +33,8 @@
   font-weight: 700;
   font-size: larger;
   font-family: "Noto Sans KR", sans-serif;
-  //   container-type: inline-size;
-  //   container-name: nav;
+  container-type: inline-size;
+  container-name: nav;
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -46,17 +46,17 @@
     gap: 24px;
     align-items: baseline;
   }
-  //   .lt680px {
-  //     display: none;
-  //   }
-  //   @container nav (width < 42.5rem) {
-  //     &__menuWrapper {
-  //       display: none;
-  //     }
-  //     .lt680px {
-  //       display: unset;
-  //     }
-  //   }
+  .lt680px {
+    display: none;
+  }
+  @container nav (width < 42.5rem) {
+    &__menuWrapper {
+      display: none;
+    }
+    .lt680px {
+      display: unset;
+    }
+  }
   &__menu > a {
     color: white;
     text-decoration: none;
@@ -66,12 +66,11 @@
 #heroN1 {
   h2 {
     text-align: center;
-    margin-bottom: 16px;
     font-weight: 900;
     font-style: italic;
     font-size: 50px;
-    color: white;
-    background-color: #662d91;
+    color: rgb(255, 255, 255);
+    background-color: #6a6a6a;
   }
 }
 #hero1 {
