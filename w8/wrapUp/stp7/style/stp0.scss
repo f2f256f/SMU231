@@ -22,6 +22,7 @@
 .wrapper {
   padding-block: 48px;
 }
+
 .wrapper .topNav_logo {
   height: 32px;
   align-items: center;
@@ -68,9 +69,9 @@
     text-align: center;
     font-weight: 900;
     font-style: italic;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    background-color: #6a6a6a;
+    font-size: 70px;
+    color: black;
+    // background-color: #6a6a6a;
   }
 }
 #hero1 {
@@ -111,8 +112,13 @@
       }
       p {
         margin-inline: auto;
-        font-size: 16px;
+        font-size: 15px;
       }
     }
+  }
+}
+#track {
+  .wrapper {
+    padding-block: 48px;
   }
 }
