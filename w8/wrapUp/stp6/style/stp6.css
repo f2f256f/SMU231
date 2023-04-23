@@ -85,14 +85,14 @@
 }
 #hero1 h2 {
   margin-bottom: 24px;
-  font-weight: 900;
-  font-size: 55px;
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
 }
 #hero1 span {
   font-style: italic;
 }
 #hero1 p {
-  margin-top: 24px;
+  margin-top: 42px;
   font-weight: 500;
   font-size: 18px;
   font-family: "Noto Sans KR", sans-serif;
@@ -112,7 +112,7 @@
   margin-bottom: 16px;
   font-weight: 900;
   font-style: italic;
-  font-size: 60px;
+  font-size: 70px;
 }
 #hero2 h3 {
   color: #666666;
@@ -150,6 +150,7 @@
 }
 #hero3 h1 {
   margin-block: 16px;
+  font-size: 47px;
 }
 #hero3 p {
   max-width: 20h;
@@ -158,13 +159,13 @@
   word-spacing: 5px;
   line-height: 2;
 }
-@media (width < 767px) {
+@media (width < 850px) {
   #hero3 .wrapper {
     display: block;
-    text-align: justify;
-    width: 90%;
-    padding: 20px p;
-    padding-margin-inline: auto;
+    text-align: center;
+  }
+  #hero3 .wrapper p {
+    margin-inline: auto;
   }
 }
 
@@ -198,6 +199,7 @@
 }
 #hero4 h1 {
   margin-block: 16px;
+  font-size: 47px;
 }
 #hero4 p {
   max-width: 20h;
@@ -246,6 +248,7 @@
 }
 #hero5 h1 {
   margin-block: 16px;
+  font-size: 47px;
 }
 #hero5 p {
   max-width: 20h;
@@ -294,6 +297,7 @@
 }
 #hero6 h1 {
   margin-block: 16px;
+  font-size: 44px;
 }
 #hero6 p {
   max-width: 20h;
