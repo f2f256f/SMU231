@@ -265,7 +265,7 @@
      object-fit: cover;
 }
 #hero4 h1 {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 700;
 }
 #hero4 p {
@@ -282,12 +282,15 @@
     text-align: center;
   }
   #hero4 .wrapper h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 12px;
   }
   #hero4 .wrapper p {
     margin-inline: auto;
     font-size: 13px;
+  }
+  #hero4 .wrapper span {
+    font-size: 25px;
   }
 }
 
@@ -350,7 +353,7 @@
      object-fit: cover;
 }
 #hero5 h1 {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 700;
 }
 #hero5 p {
@@ -367,12 +370,15 @@
     text-align: center;
   }
   #hero5 .wrapper h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 12px;
   }
   #hero5 .wrapper p {
     margin-inline: auto;
     font-size: 13px;
+  }
+  #hero5 .wrapper span {
+    font-size: 25px;
   }
 }
 
