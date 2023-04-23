@@ -159,7 +159,7 @@
   word-spacing: 5px;
   line-height: 2;
 }
-@media (width < 850px) {
+@media (max-width: 850px) {
   #hero3 .wrapper {
     display: block;
     text-align: center;
