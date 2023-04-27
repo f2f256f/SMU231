@@ -140,7 +140,7 @@
       }
       p {
         margin-inline: auto;
-        font-size: 14px;
+        font-size: 13px;
       }
     }
   }
@@ -148,7 +148,7 @@
 
 #hero2 {
   text-align: center;
-  margin-top: 124px;
+  margin-top: 80px;
   .main {
     &__text {
       margin-inline: auto;
@@ -164,11 +164,10 @@
   }
   h3 {
     color: blue;
-    background-color: y;
+    margin-top: 24px;
     font-weight: 500;
-    font-size: 35px;
-    word-spacing: 16px;
-    line-height: 1.7;
+    font-size: 45px;
+    word-spacing: 32px;
   }
 
   @media (max-width: 820px) {
@@ -177,7 +176,8 @@
         font-size: 55px;
       }
       h3 {
-        font-size: 23px;
+        font-size: 22px;
+        word-spacing: 12px;
       }
     }
   }
