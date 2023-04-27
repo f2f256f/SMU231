@@ -24,7 +24,7 @@
   background-color: black;
   color: white;
   font-weight: 600;
-  font-size: larger;
+  font-size: 24px;
   font-family: "Chakra Petch", sans-serif;
   container-type: inline-size;
   container-name: nav;
@@ -32,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 12px;
+    padding-block: 14px;
   }
   &__menuWrapper {
     display: flex;
