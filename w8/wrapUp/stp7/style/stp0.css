@@ -102,42 +102,6 @@
   }
 }
 
-.track {
-  font-weight: 700;
-  font-size: 28px;
-}
-@media (max-width: 850px) {
-  .track .wrapper {
-    font-size: 14px;
-  }
-}
-.track .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-block: 6px;
-}
-.track__menuWrapper {
-  display: flex;
-  gap: 20px;
-  align-items: baseline;
-}
-.track .button {
-  color: white;
-  background-color: grey;
-  padding: 8px 12px;
-  border-radius: 12px;
-}
-.track .button a {
-  color: white;
-  text-decoration: none;
-}
-@media (max-width: 850px) {
-  .track .button {
-    padding: 4px 6px;
-  }
-}
-
 #hero2 {
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -288,41 +252,6 @@
   }
 }
 
-.track {
-  font-weight: 700;
-  font-size: 28px;
-}
-@media (max-width: 850px) {
-  .track .wrapper {
-    font-size: 14px;
-  }
-}
-.track .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-block: 6px;
-}
-.track__menuWrapper {
-  display: flex;
-  gap: 20px;
-  align-items: baseline;
-}
-.track .button {
-  color: white;
-  padding: 8px 12px;
-  border-radius: 12px;
-}
-.track .button a {
-  color: white;
-  text-decoration: none;
-}
-@media (max-width: 850px) {
-  .track .button {
-    padding: 4px 6px;
-  }
-}
-
 #hero5 {
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -374,6 +303,45 @@
   #hero5 .wrapper span {
     font-size: 25px;
   }
+}
+
+.track {
+  font-weight: 700;
+  font-size: 28px;
+}
+@media (max-width: 850px) {
+  .track .wrapper {
+    font-size: 14px;
+  }
+}
+.track .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-block: 6px;
+}
+.track__menuWrapper {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+.track .button {
+  background-color: rgb(0, 231, 85);
+  padding: 8px 12px;
+  border-radius: 16px;
+}
+.track .button a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 850px) {
+  .track .button {
+    padding: 4px 6px;
+  }
+}
+.track #button1 {
+  color: white;
+  background-color: red;
 }
 
 #trackN1 {
