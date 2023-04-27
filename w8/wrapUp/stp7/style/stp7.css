@@ -98,7 +98,7 @@
 }
 #hero1 p {
   margin-top: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
   font-weight: 500;
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -381,6 +381,7 @@
 }
 
 .footer {
+  margin-top: 150px;
   font-family: "Roboto", sans-serif;
   background-color: #b3b3b3;
   color: white;
