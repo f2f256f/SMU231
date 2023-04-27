@@ -99,7 +99,14 @@
     background-color: red;
     color: white;
   }
-
+  h3 {
+    margin-top: 36px;
+    background-color: yellow;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+  }
   p {
     margin-top: 32px;
     margin-bottom: 48px;
@@ -128,6 +135,9 @@
       h2 {
         font-size: 48px;
       }
+      h3 {
+        font-size: 28px;
+      }
       p {
         margin-inline: auto;
         font-size: 14px;
@@ -150,7 +160,7 @@
   h1 {
     margin-bottom: 16px;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 100px;
   }
   h3 {
     color: blue;

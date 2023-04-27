@@ -96,6 +96,14 @@
   background-color: red;
   color: white;
 }
+#hero1 h3 {
+  margin-top: 36px;
+  background-color: yellow;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
 #hero1 p {
   margin-top: 32px;
   margin-bottom: 48px;
@@ -126,6 +134,9 @@
   #hero1 .wrapper h2 {
     font-size: 48px;
   }
+  #hero1 .wrapper h3 {
+    font-size: 28px;
+  }
   #hero1 .wrapper p {
     margin-inline: auto;
     font-size: 14px;
@@ -145,7 +156,7 @@
 #hero2 h1 {
   margin-bottom: 16px;
   font-weight: 900;
-  font-size: 80px;
+  font-size: 100px;
 }
 #hero2 h3 {
   color: blue;
@@ -258,6 +269,7 @@
   gap: 24px;
   word-spacing: 5px;
   line-height: 2;
+  font-weight: 500;
 }
 @media (max-width: 850px) {
   #hero4 .wrapper {
@@ -312,6 +324,7 @@
   gap: 24px;
   word-spacing: 5px;
   line-height: 2;
+  font-weight: 500;
 }
 @media (max-width: 850px) {
   #hero5 .wrapper {
@@ -365,6 +378,7 @@
   gap: 24px;
   word-spacing: 5px;
   line-height: 2;
+  font-weight: 500;
 }
 @media (max-width: 850px) {
   #hero6 .wrapper {
