@@ -139,7 +139,6 @@
 #hero2 {
   text-align: center;
   margin-top: 124px;
-  // background-color: #e6e6e6;
   .main {
     &__text {
       margin-inline: auto;
@@ -149,10 +148,8 @@
     }
   }
   h1 {
-    // font-family: "PyeongChangPeace-Bold";
     margin-bottom: 16px;
     font-weight: 900;
-    // font-style: italic;
     font-size: 80px;
   }
   h3 {
@@ -272,6 +269,7 @@
     gap: 24px;
     word-spacing: 5px;
     line-height: 2;
+    font-weight: 500;
   }
   @media (max-width: 850px) {
     .wrapper {
@@ -327,6 +325,7 @@
     gap: 24px;
     word-spacing: 5px;
     line-height: 2;
+    font-weight: 500;
   }
   @media (max-width: 850px) {
     .wrapper {
@@ -381,6 +380,7 @@
     gap: 24px;
     word-spacing: 5px;
     line-height: 2;
+    font-weight: 500;
   }
   @media (max-width: 850px) {
     .wrapper {
