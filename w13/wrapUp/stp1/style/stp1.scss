@@ -1,6 +1,20 @@
+@import "theme.dark.css"
+  (prefers-color-scheme: dark);
+@import "theme.light.css"
+  (prefers-color-scheme: light);
+
 $wrapper-padding-inline: 2rem;
 $min-height: 2rem;
 $progressBar-height: 1rem;
+
+$bg: var(--bg);
+$bgVariant: var(--bgVariant);
+$txt: var(--txt);
+$surface-transparent: var(--surface-transparent);
+$surface: var(--surface);
+$onSurface: var(--onSurface);
+$accent: var(--accent);
+
 *,
 *::before,
 *::after {
@@ -18,6 +32,8 @@ html {
 
 body {
   margin: 0;
+  background: $bg;
+  color: txt;
   font-family: system-ui;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -27,10 +43,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: calc(80ch + 2 * $padding-inline);
+  max-width: calc(
+    80ch + 2 * $wrapper-padding-inline
+  );
   min-height: max(50dvh, $min-height);
   margin-inline: auto;
-  padding-inline: $padding-inline;
+  padding-inline: $wrapper-padding-inline;
 }
 
 header {
@@ -40,7 +58,7 @@ header {
 }
 
 section:nth-of-type(odd) {
-  background-color: cadetblue;
+  background-color: $bgVariant;
 }
 
 .stickyWrapper {
@@ -66,7 +84,7 @@ aside {
   height: max(100dvh, $min-height);
   padding-inline: 1rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
-  background-color: rgba(0 0 0 / 50%);
+  background-color: $surface-transparent;
   backdrop-filter: blur(0.25rem);
   font-size: 0.875rem;
 
@@ -83,9 +101,10 @@ aside {
       display: flex;
       align-content: center;
       gap: 0.75rem;
-      color: white;
+      color: $onSurface;
       font-weight: 600;
       text-transform: capitalize;
+      transition: color 150ms ease-out;
 
       &::before {
         content: "";
@@ -93,7 +112,14 @@ aside {
         height: 1rem;
         margin-top: 0.125rem;
         border-radius: 9999999px;
-        border: 0.125rem solid white;
+        border: 0.125rem solid $onSurface;
+        transition: border-color 150ms ease-out;
+      }
+      &:hover {
+        color: $accent;
+        &::before {
+          border-color: $accent;
+        }
       }
     }
   }
@@ -110,13 +136,13 @@ aside {
   grid-row: 1;
   width: 100%;
   height: $progressBar-height;
-  background-color: rgba(64 64 64);
+  background-color: $surface;
   .indicator {
     position: absolute;
     inset: 0;
     // transform: scaleX(50%);
     transform-origin: left;
-    background-color: blue;
+    background-color: $accent;
   }
 }
 

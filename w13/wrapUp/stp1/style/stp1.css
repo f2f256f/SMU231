@@ -1,3 +1,5 @@
+@import "theme.dark.css" (prefers-color-scheme: dark);
+@import "theme.light.css" (prefers-color-scheme: light);
 *,
 *::before,
 *::after {
@@ -15,6 +17,8 @@ html {
 
 body {
   margin: 0;
+  background: var(--bg);
+  color: txt;
   font-family: system-ui;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -37,7 +41,7 @@ header {
 }
 
 section:nth-of-type(odd) {
-  background-color: cadetblue;
+  background-color: var(--bgVariant);
 }
 
 .stickyWrapper {
@@ -64,7 +68,7 @@ aside {
   height: max(100dvh, 2rem);
   padding-inline: 1rem 1.5rem;
   border-radius: 0 1rem 1rem 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--surface-transparent);
   -webkit-backdrop-filter: blur(0.25rem);
           backdrop-filter: blur(0.25rem);
   font-size: 0.875rem;
@@ -82,9 +86,10 @@ aside ol li {
   display: flex;
   align-content: center;
   gap: 0.75rem;
-  color: white;
+  color: var(--onSurface);
   font-weight: 600;
   text-transform: capitalize;
+  transition: color 150ms ease-out;
 }
 aside ol li::before {
   content: "";
@@ -92,7 +97,14 @@ aside ol li::before {
   height: 1rem;
   margin-top: 0.125rem;
   border-radius: 9999999px;
-  border: 0.125rem solid white;
+  border: 0.125rem solid var(--onSurface);
+  transition: border-color 150ms ease-out;
+}
+aside ol li:hover {
+  color: var(--accent);
+}
+aside ol li:hover::before {
+  border-color: var(--accent);
 }
 aside a {
   text-decoration: none;
@@ -106,13 +118,13 @@ aside a {
   grid-row: 1;
   width: 100%;
   height: 1rem;
-  background-color: rgb(64, 64, 64);
+  background-color: var(--surface);
 }
 .progressBar .indicator {
   position: absolute;
   inset: 0;
   transform-origin: left;
-  background-color: blue;
+  background-color: var(--accent);
 }
 
 footer .wrapper {
@@ -138,7 +150,13 @@ footer .wrapper {
     height: fit-content;
     padding-block: 1rem;
     padding-inline: unset;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     border-radius: 0 0 1rem 1rem;
+  }
+  aside::-webkit-scrollbar {
+    display: none;
   }
   aside ol {
     display: flex;
@@ -146,8 +164,37 @@ footer .wrapper {
     justify-content: center;
     gap: 3rem;
   }
+  aside ol a:first-of-type li {
+    margin-left: 2rem;
+  }
+  aside ol a:last-of-type li {
+    margin-right: 2rem;
+  }
   aside .progressBar {
     grid-column: 1;
     grid-row: 1;
+  }
+}
+@media (width < 59.2rem) {
+  aside {
+    top: 1rem;
+    position: sticky;
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-block: 1rem;
+    padding-inline: unset;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-radius: 0 0 1rem 1rem;
+  }
+  aside::-webkit-scrollbar {
+    display: none;
+  }
+  aside ol {
+    justify-content: flex-start;
   }
 }

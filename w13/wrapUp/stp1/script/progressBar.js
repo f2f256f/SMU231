@@ -14,6 +14,9 @@ const progressBar = () => {
   if (progress >= 0 && progress <= 1) {
     indicator.style.cssText =
       "transform: scaleX(" + progress + ")";
+  } else if (progress < 0) {
+    indicator.style.cssText =
+      "transform: scaleX(0)";
   }
 };
 // 이벤트 리스너 추가하는 법 1
