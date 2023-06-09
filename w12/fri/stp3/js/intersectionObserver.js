@@ -29,9 +29,6 @@ let elems = document.querySelectorAll(
   ".animTrigger"
 );
 console.log(elems);
-// for(let idx = 0; idx < elems. length; idx++) {
-//     observer.observe(elems[idx]);
-// }
 elems.forEach((eachElem) => {
   observer.observe(eachElem);
 });

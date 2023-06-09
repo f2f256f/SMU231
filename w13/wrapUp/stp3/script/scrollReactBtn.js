@@ -2,7 +2,6 @@ const observingTargets =
   document.querySelectorAll("main section");
 const toggleTargets =
   document.querySelectorAll("aside>ol>a");
-
 const pageBtnMap = new Map();
 const setPageBtnMap = () => {
   observingTargets.forEach((eachTargets, idx) => {
