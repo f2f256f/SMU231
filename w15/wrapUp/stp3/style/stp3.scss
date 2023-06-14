@@ -1,0 +1,289 @@
+@import "theme.dark.css" (prefers-color-scheme: dark);
+@import "theme.light.css" (prefers-color-scheme: light);
+
+$wrapper-padding-inline: 2rem;
+$min-height: 2rem;
+$progressBar-height: 1rem;
+
+$bg: var(--bg);
+$bgVariant: var(--bgVariant);
+$txt: var(--txt);
+$surface-transparent: var(--surface-transparent);
+$surface: var(--surface);
+$onSurface: var(--onSurface);
+$accent: var(--accent);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none;
+}
+
+html {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: $bg;
+  color: $txt;
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+section {
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-block: 4rem;
+  max-width: calc(60ch + 2 * $wrapper-padding-inline);
+  // min-height: max(90dvh, $min-height);
+  min-height: max(600px, 100dvh);
+  margin-inline: auto;
+  padding-inline: $wrapper-padding-inline;
+}
+
+.content {
+  // border: 1px solid red; //나중에 삭제;
+}
+
+.animTrigger {
+  .animTarget {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+  }
+
+  &.triggered {
+    .animTarget {
+      animation: typing-animation 1s linear forwards;
+    }
+  }
+}
+
+@keyframes typing-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+h1 {
+  animation: fade-in 2.5s ease-in;
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+header {
+  text-align: center;
+  text-wrap: balance;
+  word-break: keep-all;
+}
+
+section:nth-of-type(even) {
+  background-color: $bgVariant;
+}
+
+.stickyWrapper {
+  display: grid;
+  position: relative;
+  grid-template-columns: fit-content(0) 1fr;
+  grid-template-rows: 1fr;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  display: block;
+  margin-block: 3rem;
+}
+
+main {
+  z-index: 1;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+aside {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  grid-column: 1;
+  grid-row: 1;
+  width: fit-content;
+  height: max(100dvh, $min-height);
+  padding-inline: 1rem 1.5rem;
+  border-radius: 0 1rem 1rem 0;
+  background-color: $surface-transparent;
+  backdrop-filter: blur(0.25rem);
+  font-size: 0.875rem;
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-content: center;
+      gap: 0.75rem;
+      color: $onSurface;
+      font-weight: 600;
+      text-transform: capitalize;
+      transition: color 150ms ease-out;
+
+      &::before {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        margin-top: 0.125rem;
+        border-radius: 3px;
+        border: 0.125rem solid $onSurface;
+        transition: border-color 150ms ease-out, background-color 150ms ease-out;
+      }
+      &:hover {
+        color: $accent;
+        &::before {
+          border-color: $accent;
+        }
+      }
+      &.pressed {
+        color: $accent;
+        &::before {
+          border-color: $accent;
+          background-color: $accent;
+        }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.progressBar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  width: 100%;
+  height: $progressBar-height;
+  background-color: $surface;
+  .indicator {
+    position: absolute;
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: $accent;
+  }
+}
+
+footer {
+  .wrapper {
+    min-height: max(100dvh, $min-height);
+  }
+}
+
+@media (width < 67.5rem) {
+  .stickyWrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+  }
+  main {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  aside {
+    position: sticky;
+    top: $progressBar-height;
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    height: fit-content;
+    padding-block: 1rem;
+    padding-inline: unset;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    border-radius: 0 0 1rem 1rem;
+
+    ol {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+
+      a:first-of-type li {
+        margin-left: $wrapper-padding-inline;
+      }
+
+      a:last-of-type li {
+        margin-right: $wrapper-padding-inline;
+      }
+    }
+
+    .progressBar {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+}
+
+@media (width < 59.2rem) {
+  aside {
+    top: $progressBar-height;
+    position: sticky;
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    height: fit-content;
+    padding-block: 1rem;
+    padding-inline: unset;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    border-radius: 0 0 1rem 1rem;
+
+    ol {
+      justify-content: flex-start;
+    }
+  }
+}
