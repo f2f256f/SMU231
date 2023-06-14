@@ -28,8 +28,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: calc(80ch + 4rem);
-  min-height: max(50dvh, 2rem);
+  margin-block: 4rem;
+  max-width: calc(60ch + 4rem);
+  min-height: max(85dvh, 2rem);
   margin-inline: auto;
   padding-inline: 2rem;
 }
@@ -49,6 +50,14 @@ section:nth-of-type(odd) {
   position: relative;
   grid-template-columns: fit-content(0) 1fr;
   grid-template-rows: 1fr;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  display: block;
+  margin-block: 3rem;
 }
 
 main {
@@ -96,9 +105,9 @@ aside ol li::before {
   width: 1rem;
   height: 1rem;
   margin-top: 0.125rem;
-  border-radius: 9999999px;
+  border-radius: 3px;
   border: 0.125rem solid var(--onSurface);
-  transition: border-color 150ms ease-out;
+  transition: border-color 150ms ease-out, background-color 150ms ease-out;
 }
 aside ol li:hover {
   color: var(--accent);
@@ -106,8 +115,16 @@ aside ol li:hover {
 aside ol li:hover::before {
   border-color: var(--accent);
 }
+aside ol li.pressed {
+  color: var(--accent);
+}
+aside ol li.pressed::before {
+  border-color: var(--accent);
+  background-color: var(--accent);
+}
 aside a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .progressBar {
@@ -123,6 +140,7 @@ aside a {
 .progressBar .indicator {
   position: absolute;
   inset: 0;
+  transform: scaleX(0);
   transform-origin: left;
   background-color: var(--accent);
 }

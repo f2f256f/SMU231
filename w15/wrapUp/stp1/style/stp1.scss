@@ -1,5 +1,5 @@
-@import "theme.dark.css" (prefers-color-scheme: dark);
-@import "theme.light.css" (prefers-color-scheme: light);
+// @import "theme.dark.css" (prefers-color-scheme: dark);
+// @import "theme.light.css" (prefers-color-scheme: light);
 
 $wrapper-padding-inline: 2rem;
 $min-height: 2rem;
@@ -31,7 +31,7 @@ html {
 body {
   margin: 0;
   background: $bg;
-  color: $txt;
+  color: txt;
   font-family: system-ui;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -62,6 +62,13 @@ section:nth-of-type(odd) {
   position: relative;
   grid-template-columns: fit-content(0) 1fr;
   grid-template-rows: 1fr;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  display: block;
 }
 
 main {
@@ -109,7 +116,7 @@ aside {
         margin-top: 0.125rem;
         border-radius: 9999999px;
         border: 0.125rem solid $onSurface;
-        transition: border-color 150ms ease-out;
+        transition: border-color 150ms ease-out, background-color 150ms ease-out;
       }
       &:hover {
         color: $accent;
@@ -117,10 +124,18 @@ aside {
           border-color: $accent;
         }
       }
+      &.pressed {
+        color: $accent;
+        &::before {
+          border-color: $accent;
+          background-color: $accent;
+        }
+      }
     }
   }
   a {
     text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -136,7 +151,7 @@ aside {
   .indicator {
     position: absolute;
     inset: 0;
-    // transform: scaleX(50%);
+    transform: scaleX(0);
     transform-origin: left;
     background-color: $accent;
   }

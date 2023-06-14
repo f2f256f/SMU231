@@ -1,5 +1,3 @@
-@import "theme.dark.css" (prefers-color-scheme: dark);
-@import "theme.light.css" (prefers-color-scheme: light);
 *,
 *::before,
 *::after {
@@ -18,7 +16,7 @@ html {
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--txt);
+  color: txt;
   font-family: system-ui;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -49,6 +47,13 @@ section:nth-of-type(odd) {
   position: relative;
   grid-template-columns: fit-content(0) 1fr;
   grid-template-rows: 1fr;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  display: block;
 }
 
 main {
@@ -98,7 +103,7 @@ aside ol li::before {
   margin-top: 0.125rem;
   border-radius: 9999999px;
   border: 0.125rem solid var(--onSurface);
-  transition: border-color 150ms ease-out;
+  transition: border-color 150ms ease-out, background-color 150ms ease-out;
 }
 aside ol li:hover {
   color: var(--accent);
@@ -106,8 +111,16 @@ aside ol li:hover {
 aside ol li:hover::before {
   border-color: var(--accent);
 }
+aside ol li.pressed {
+  color: var(--accent);
+}
+aside ol li.pressed::before {
+  border-color: var(--accent);
+  background-color: var(--accent);
+}
 aside a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .progressBar {
@@ -123,6 +136,7 @@ aside a {
 .progressBar .indicator {
   position: absolute;
   inset: 0;
+  transform: scaleX(0);
   transform-origin: left;
   background-color: var(--accent);
 }
