@@ -86,7 +86,7 @@ h1 {
       animation: typing-animation 2s linear forwards;
     }
   }
-} //Episode
+}
 @keyframes typing-animation {
   from {
     width: 0;
@@ -94,7 +94,7 @@ h1 {
   to {
     width: 100%;
   }
-}
+} //Episode
 
 #section1 {
   img.animTarget {
@@ -144,6 +144,28 @@ h1 {
   40%,
   100% {
     transform: rotateZ(0);
+  }
+}
+
+#section3 img.animTarget {
+  filter: grayscale(100%);
+  transition: filter 500ms ease, transform 500ms ease;
+}
+
+#section3 img.animTarget:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

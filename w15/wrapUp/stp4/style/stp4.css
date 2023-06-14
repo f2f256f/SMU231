@@ -111,6 +111,27 @@ h1 {
     transform: rotateZ(0);
   }
 }
+#section3 img.animTarget {
+  filter: grayscale(100%);
+  transition: filter 500ms ease, transform 500ms ease;
+}
+
+#section3 img.animTarget:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 h2 {
   font-family: "Roboto Slab", serif;
 }
