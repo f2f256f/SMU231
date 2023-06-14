@@ -121,17 +121,14 @@ h1 {
   transform: scale(1.1);
 }
 
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+#section4 img.animTarget {
+  filter: blur(8px);
+  transition: filter 4s ease;
 }
+#section4.triggered img.animTarget {
+  filter: blur(0);
+}
+
 h2 {
   font-family: "Roboto Slab", serif;
 }

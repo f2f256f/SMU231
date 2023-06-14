@@ -157,15 +157,15 @@ h1 {
   transform: scale(1.1);
 }
 
-@keyframes scale {
-  0% {
-    transform: scale(1);
+#section4 {
+  img.animTarget {
+    filter: blur(8px);
+    transition: filter 4s ease;
   }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
+  &.triggered {
+    img.animTarget {
+      filter: blur(0);
+    }
   }
 }
 
