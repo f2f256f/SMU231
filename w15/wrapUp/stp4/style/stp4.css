@@ -129,6 +129,34 @@ h1 {
   filter: blur(0);
 }
 
+#section5 img.animTarget {
+  transform: scale(0);
+  transition: transform 500ms ease-out;
+}
+#section5.triggered img.animTarget {
+  transform: scale(1);
+}
+
+#section6 img.animTarget {
+  opacity: 0;
+  transition: opacity 8s ease-in-out;
+}
+#section6.triggered img.animTarget {
+  opacity: 1;
+  animation: blink 2s ease-in-out 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 h2 {
   font-family: "Roboto Slab", serif;
 }
