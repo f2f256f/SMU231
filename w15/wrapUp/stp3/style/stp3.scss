@@ -52,6 +52,25 @@ section {
   padding-inline: $wrapper-padding-inline;
 }
 
+$h1-opacity-start: 0;
+$h1-opacity-end: 1;
+
+@keyframes fade-in {
+  from {
+    opacity: $h1-opacity-start;
+  }
+  to {
+    opacity: $h1-opacity-end;
+  }
+}
+
+h1 {
+  animation: fade-in 2.5s ease-in;
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
 .content {
   // border: 1px solid red; //나중에 삭제;
 }
@@ -77,13 +96,6 @@ section {
   to {
     width: 100%;
   }
-}
-
-h1 {
-  animation: fade-in 2.5s ease-in;
-  font-size: 64px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
 }
 
 h2 {

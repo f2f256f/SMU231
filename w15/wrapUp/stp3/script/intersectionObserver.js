@@ -1,7 +1,7 @@
 let scrollOption = {
   root: null,
-  rootMargin: "100px",
-  threshold: 0.75,
+  rootMargin: "200px",
+  threshold: 0.5,
 };
 
 let scrollFunction = (scrollTargets) => {
