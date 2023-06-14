@@ -172,7 +172,7 @@ h1 {
 #section5 {
   img.animTarget {
     transform: scale(0);
-    transition: transform 500ms ease-out;
+    transition: transform 1s ease-out;
   }
   &.triggered {
     img.animTarget {
@@ -205,6 +205,38 @@ h1 {
   }
 }
 
+#section7 {
+  .content {
+    overflow: hidden;
+  }
+  img.animTarget {
+    position: relative;
+    transform-origin: top center;
+    animation: zoomOut 3s ease-in-out forwards;
+    margin-bottom: 170px;
+  }
+  &.triggered {
+    img.animTarget {
+      animation: zoomIn 3s ease-in-out forwards;
+    }
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
 h2 {
   font-family: "Roboto Slab", serif;
 }

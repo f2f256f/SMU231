@@ -23,3 +23,11 @@ console.log(elems);
 elems.forEach((eachElem) => {
   scroll.observe(eachElem);
 });
+
+let animTargets = document.querySelectorAll(".animTarget");
+
+animTargets.forEach((target) => {
+  target.addEventListener("animationend", () => {
+    target.classList.remove("animating");
+  });
+});
