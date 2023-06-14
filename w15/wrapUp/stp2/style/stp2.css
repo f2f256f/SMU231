@@ -30,9 +30,28 @@ body {
   justify-content: center;
   margin-block: 4rem;
   max-width: calc(60ch + 4rem);
-  min-height: max(85dvh, 2rem);
+  min-height: max(90dvh, 2rem);
   margin-inline: auto;
   padding-inline: 2rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+h1 {
+  animation: fade-in 2.5s ease-in;
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
 }
 
 header {
@@ -157,6 +176,9 @@ footer .wrapper {
   main {
     grid-column: 1;
     grid-row: 3;
+  }
+  h1 {
+    font-size: 36px;
   }
   aside {
     position: sticky;

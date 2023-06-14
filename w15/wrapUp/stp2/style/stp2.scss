@@ -43,9 +43,42 @@ body {
   justify-content: center;
   margin-block: 4rem;
   max-width: calc(60ch + 2 * $wrapper-padding-inline);
-  min-height: max(85dvh, $min-height);
+  min-height: max(90dvh, $min-height);
   margin-inline: auto;
   padding-inline: $wrapper-padding-inline;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  animation: fade-in 2.5s ease-in;
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+
+  // overflow: hidden; /* 텍스트가 넘칠 경우 숨김 처리 */
+  // white-space: nowrap; /* 텍스트가 한 줄에 나타나도록 설정 */
+  // animation: typing-effect 2s steps(30, end) infinite;
+
+  // @keyframes typing-effect {
+  //   from {
+  //     width: 0; /* 텍스트 너비를 0으로 시작 */
+  //   }
+  //   to {
+  //     width: 100%; /* 텍스트 너비를 100%로 끝 */
+  //   }
+  // }
 }
 
 header {
@@ -173,6 +206,10 @@ footer {
   main {
     grid-column: 1;
     grid-row: 3;
+  }
+
+  h1 {
+    font-size: 36px;
   }
 
   aside {
