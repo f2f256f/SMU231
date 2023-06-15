@@ -422,9 +422,47 @@ h1 {
   }
 }
 
+#section13 {
+  p.animTarget {
+    opacity: 1;
+    transition: opacity 4s ease-in-out infinite;
+    animation: fade-out 2s ease-in-out 3;
+  }
+  h4.animTarget {
+    opacity: 0;
+    animation: fade-in 4s ease-in-out 1;
+  }
+
+  &.triggered {
+    p.animTarget {
+      opacity: 0;
+    }
+    h4.animTarget {
+      opacity: 0;
+      animation: fade-out 4s ease-in-out 1;
+    }
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 h2 {
-  // font-family: "Roboto Slab", serif;
-  // font-family: "VT323", monospace;
   font-family: "Rubik Pixels", cursive;
   font-size: 32px;
 }
@@ -432,7 +470,9 @@ h2 {
 h3 {
   font-style: italic;
 }
-
+h4 {
+  font-weight: 500;
+}
 p {
   span {
     font-size: 20px;
@@ -587,7 +627,9 @@ footer {
   h2 {
     font-size: 24px;
   }
-
+  h4 {
+    font-weight: 500;
+  }
   p {
     span {
       font-size: 16px;
