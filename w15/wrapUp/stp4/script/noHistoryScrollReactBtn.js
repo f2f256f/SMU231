@@ -1,10 +1,13 @@
-const btns = document.querySelectorAll("aside>ol>a");
+const btns = document.querySelectorAll("aside > ol > a");
+
 const whenBtnClicked = (e) => {
   const link = btnsLinks.get(e.currentTarget);
   const scrollToTarget = document.querySelector(link);
   scrollToTarget.scrollIntoView();
 };
+
 const btnsLinks = new Map();
+
 btns.forEach((eachBtn) => {
   const link = eachBtn.getAttribute("href");
   eachBtn.removeAttribute("href");
@@ -21,14 +24,17 @@ pages.forEach((eachPage, idx) => {
 });
 
 let lastTarget;
-const whenPageInView = (observeredPaged) => {
-  observeredPaged.forEach((eachPage) => {
+
+const whenPageInView = (observedPages) => {
+  observedPages.forEach((eachPage) => {
     if (eachPage.isIntersecting) {
       const pairedElem = pageBtnMap.get(eachPage.target);
-      const toggleTarget = pairedElem.querySelector("li");
-      toggleTarget.classList.add("pressed");
-      lastTarget?.classList.remove("pressed");
-      lastTarget = toggleTarget;
+      if (pairedElem) {
+        const toggleTarget = pairedElem.querySelector("li");
+        toggleTarget.classList.add("pressed");
+        lastTarget?.classList.remove("pressed");
+        lastTarget = toggleTarget;
+      }
     }
   });
 };
