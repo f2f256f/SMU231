@@ -68,8 +68,13 @@ $h1-opacity-end: 1;
 h1 {
   animation: fade-in 2.5s ease-in;
   font-size: 64px;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: "Russo One", sans-serif;
   font-weight: 900;
+  span {
+    color: red;
+    font-size: 54px;
+  }
 }
 
 .content {
@@ -406,8 +411,10 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto Slab", serif;
-  font-size: 36px;
+  // font-family: "Roboto Slab", serif;
+  // font-family: "VT323", monospace;
+  font-family: "Rubik Pixels", cursive;
+  font-size: 32px;
 }
 
 header {
@@ -538,9 +545,15 @@ footer {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 34px;
+    span {
+      font-size: 26px;
+    }
   }
 
+  h2 {
+    font-size: 24px;
+  }
   aside {
     position: sticky;
     top: $progressBar-height;

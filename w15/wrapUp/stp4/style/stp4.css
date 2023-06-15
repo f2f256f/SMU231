@@ -51,8 +51,12 @@ section {
 h1 {
   animation: fade-in 2.5s ease-in;
   font-size: 64px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Russo One", sans-serif;
   font-weight: 900;
+}
+h1 span {
+  color: red;
+  font-size: 54px;
 }
 
 .animTrigger h2.animTarget {
@@ -332,8 +336,8 @@ h1 {
   }
 }
 h2 {
-  font-family: "Roboto Slab", serif;
-  font-size: 36px;
+  font-family: "Rubik Pixels", cursive;
+  font-size: 32px;
 }
 
 header {
@@ -460,7 +464,13 @@ footer .wrapper {
     grid-row: 3;
   }
   h1 {
-    font-size: 36px;
+    font-size: 34px;
+  }
+  h1 span {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 24px;
   }
   aside {
     position: sticky;
