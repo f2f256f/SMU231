@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "theme.dark.css" (prefers-color-scheme: dark);
 @import "theme.light.css" (prefers-color-scheme: light);
 *,
@@ -206,6 +207,53 @@ h1 {
     transform: scaleY(1);
   }
 }
+#section9 img.animTarget {
+  filter: grayscale(0);
+  transition: filter 2s ease-in-out;
+}
+#section9.triggered img.animTarget {
+  filter: grayscale(100%);
+}
+
+#section10 img.animTarget {
+  position: relative;
+  overflow: hidden;
+  animation: ripple 0.8s ease-in-out infinite;
+}
+@keyframes ripple {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+#section11 img.animTarget {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+#section11 img.animTarget:hover {
+  opacity: 0;
+}
+
+@keyframes shrink-and-disappear {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
 #section12 img.animTarget {
   animation: shake 0.5s linear infinite;
   animation-play-state: paused;
@@ -231,6 +279,7 @@ h1 {
     transform: translateX(0) rotate(0);
   }
 }
+/* #section11부터의 섹션에 대해서도 반복적으로 설정해주세요 */
 h2 {
   font-family: "Roboto Slab", serif;
 }
