@@ -53,10 +53,14 @@ h1 {
   font-size: 64px;
   font-family: "Russo One", sans-serif;
   font-weight: 900;
+  letter-spacing: 2px;
 }
 h1 span {
   color: red;
   font-size: 54px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
 }
 
 .animTrigger h2.animTarget {
@@ -355,11 +359,11 @@ h1 span {
 }
 #section13.triggered p.animTarget {
   opacity: 0;
-  animation: fade-out 2s ease-in-out 2;
+  animation: fade-out 2s ease-in-out 4;
 }
 #section13.triggered h4.animTarget {
   opacity: 0;
-  animation: fade-out 4s ease-in-out 1;
+  animation: fade-out 8s ease-in-out 1;
 }
 
 @keyframes fade-out {
