@@ -348,16 +348,14 @@ h1 span {
   }
 }
 #section13 p.animTarget {
-  opacity: 1;
-  transition: opacity 4s ease-in-out infinite;
-  animation: fade-out 2s ease-in-out 3;
+  opacity: 0;
 }
 #section13 h4.animTarget {
   opacity: 0;
-  animation: fade-in 4s ease-in-out 1;
 }
 #section13.triggered p.animTarget {
   opacity: 0;
+  animation: fade-out 2s ease-in-out 2;
 }
 #section13.triggered h4.animTarget {
   opacity: 0;

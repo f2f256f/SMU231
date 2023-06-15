@@ -424,18 +424,16 @@ h1 {
 
 #section13 {
   p.animTarget {
-    opacity: 1;
-    transition: opacity 4s ease-in-out infinite;
-    animation: fade-out 2s ease-in-out 3;
+    opacity: 0;
   }
   h4.animTarget {
     opacity: 0;
-    animation: fade-in 4s ease-in-out 1;
   }
 
   &.triggered {
     p.animTarget {
       opacity: 0;
+      animation: fade-out 2s ease-in-out 2;
     }
     h4.animTarget {
       opacity: 0;
@@ -461,6 +459,49 @@ h1 {
     opacity: 1;
   }
 }
+
+// #section13 {
+//   p.animTarget {
+//     opacity: 0;
+//     transition: opacity 4s ease-in-out infinite;
+//     animation: fade-out 2s ease-in-out 5;
+//   }
+//   h4.animTarget {
+//     opacity: 0;
+//     animation: fade-in 4s ease-in-out 1;
+//   }
+
+//   &.triggered {
+//     p.animTarget {
+//       opacity: 0;
+//     }
+//     h4.animTarget {
+//       opacity: 0;
+//       animation: fade-out 4s ease-in-out 1;
+//     }
+//   }
+// }
+
+// @keyframes fade-out {
+//   0% {
+//     opacity: 1;
+//   }
+//   20% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
+
+// @keyframes fade-in {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 h2 {
   font-family: "Rubik Pixels", cursive;
