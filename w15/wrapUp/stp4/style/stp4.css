@@ -382,6 +382,14 @@ h1 span {
     opacity: 1;
   }
 }
+.lottie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 h2 {
   font-family: "Rubik Pixels", cursive;
   font-size: 32px;
@@ -533,7 +541,7 @@ footer p {
     grid-row: 3;
   }
   h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
   h1 span {
     font-size: 26px;
