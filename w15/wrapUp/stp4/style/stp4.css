@@ -53,7 +53,7 @@ h1 {
   font-size: 64px;
   font-family: "Russo One", sans-serif;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 h1 span {
   color: red;
@@ -243,7 +243,7 @@ h1 span {
   height: 100%;
   background-color: rgba(255, 0, 0, 0.3);
   opacity: 0.5;
-  animation: blink 2s 3 forwards;
+  animation: blink 3s 3 forwards;
 }
 
 #section10.triggered::before {
