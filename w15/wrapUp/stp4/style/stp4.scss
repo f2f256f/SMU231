@@ -186,25 +186,12 @@ h1 {
 
 #section6 {
   img.animTarget {
-    opacity: 0;
-    transition: opacity 8s ease-in-out;
-  }
-  &.triggered {
-    img.animTarget {
-      opacity: 1;
-      animation: blink 2s ease-in-out 1;
-    }
-  }
-}
-@keyframes blink {
-  0% {
+    transition: opacity 1s ease-in-out;
     opacity: 1;
   }
-  50% {
+
+  img.animTarget:hover {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -316,7 +303,6 @@ h1 {
   opacity: 0.5;
   animation: blink 2s infinite;
 }
-
 #section11.triggered::before {
   content: "";
   position: absolute;
@@ -328,6 +314,7 @@ h1 {
   opacity: 0.5;
   animation: blink 1s infinite;
 }
+
 #section12.triggered::before {
   content: "";
   position: absolute;
@@ -359,16 +346,6 @@ h1 {
     opacity: 0.5;
   }
   100% {
-    opacity: 0;
-  }
-}
-#section11 {
-  img.animTarget {
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
-  }
-
-  img.animTarget:hover {
     opacity: 0;
   }
 }
