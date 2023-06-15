@@ -1,6 +1,6 @@
 :root {
-  --bg: #000000;
-  --bgVariant: rgba(0, 0, 0, 0.5);
+  --bg: url("img_noiseGrain.jpg");
+  --bgVariant: url("img_noiseGrain.jpg");
   --txt: #e4e1e6;
   --surface-transparent: rgba(44, 44, 44, 0.5);
   --surface: #2f2f2f;
