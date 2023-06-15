@@ -47,7 +47,6 @@ section {
   justify-content: center;
   margin-block: 4rem;
   max-width: calc(80ch + 2 * $wrapper-padding-inline);
-  // min-height: max(90dvh, $min-height);
   min-height: max(600px, 100dvh);
   margin-inline: auto;
   padding-inline: $wrapper-padding-inline;
@@ -593,17 +592,6 @@ aside {
     transform: scaleX(0);
     transform-origin: left;
     background-color: $accent;
-  }
-}
-
-footer {
-  .wrapper {
-    min-height: max(70dvh, $min-height);
-  }
-  p {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 24px;
   }
 }
 
