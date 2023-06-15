@@ -429,6 +429,14 @@ h2 {
   font-size: 32px;
 }
 
+p {
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+  }
+}
+
 header {
   text-align: center;
   text-wrap: balance;
@@ -574,6 +582,12 @@ footer {
 
   h2 {
     font-size: 24px;
+  }
+
+  p {
+    span {
+      font-size: 16px;
+    }
   }
   aside {
     position: sticky;
